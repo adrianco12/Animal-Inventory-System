@@ -1,7 +1,5 @@
 # Animal-Inventory-System
-This program keeps track of an inventory of animals and their attributes in C#.
-
-This program utilizes OOP concepts such as inheritance, encapsulation (exception handling), abstraction, and polymorphism. Furthermore, it includes a graphical user interface. 
+This program keeps track of an inventory of animals and their attributes in C# through a graphical user interface. It utilizes Object Oriented Programming concepts such as inheritance, encapsulation (exception handling), abstraction, and polymorphism. 
 
 The base class, called Animal, has private string fields for name, breed, color, and an array of vaccination record objects. There are public properties and an overloaded constructor in this class. To validate this data, an exception class is used to determine if there is invalid input. In each property of the Animal base class, the setter method invokes a function that checks each character of the input value to ensure it contains only letters. If it encounters a character that is not a letter, it throws an exception, passing an error message indicating which data field caused the exception. In main, a try and catch block is used. The program tries to create a dog or horse object, and if an exception is thrown, the program will send an error message and the object will not be created. Furthermore, there is a protected virtual display method that will concatenate a string of the data mentioned and return it. There is also a public access display method that will access the protected display method.
 
